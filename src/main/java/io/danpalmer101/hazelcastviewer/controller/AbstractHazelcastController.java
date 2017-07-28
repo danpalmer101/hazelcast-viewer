@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.List;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 /**
  * Common Hazelcast operations
@@ -18,11 +19,10 @@ public abstract class AbstractHazelcastController {
     @Autowired
     protected HazelcastInstance hazelcastInstance;
 
-    protected List<String> getDistributedObjectNames(final String serviceName) {
+    protected Stream<String> getDistributedObjectNames(final String serviceName) {
         return hazelcastInstance.getDistributedObjects().stream()
                 .filter(d -> d.getServiceName().equals(serviceName))
-                .map(d -> d.getName())
-                .collect(Collectors.toList());
+                .map(d -> d.getName());
     }
 
 }
