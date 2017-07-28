@@ -26,5 +26,8 @@ The following endpoints are available:
 
 Spring Boot actuators are also enabled, so all [actuator endpoints](https://docs.spring.io/spring-boot/docs/current/reference/html/production-ready-endpoints.html) are available, authentication for these endpoints is disabled.
 
+# Viewing serialized objects
 
+If the Hazelcast instance is storing serialized objects, you can add support for these by adding them as Maven dependencies to this project.
 
+This will allow you view custom Java objects from your project that are stored in Hazelcast.
