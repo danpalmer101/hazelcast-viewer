@@ -15,7 +15,7 @@ import java.util.Collections;
 import java.util.List;
 
 /**
- * Created by danielp on 28/07/2017.
+ * Configuration of HazelcastInstance
  */
 @Configuration
 @EnableAutoConfiguration(exclude={HazelcastAutoConfiguration.class})
