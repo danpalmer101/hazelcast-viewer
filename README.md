@@ -1,5 +1,8 @@
 # hazelcast-viewer
-View the contents of a Hazelcast instance
+
+View the contents of a Hazelcast instance.
+
+_Tested against Hazelcast 3.8._
 
 ## Run
 
