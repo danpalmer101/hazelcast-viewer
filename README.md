@@ -14,10 +14,10 @@ This project is a Maven-built Spring Boot application, so can be run in many way
 
 ## Configuration
 
-The default address for the Hazelcast instance to view is `localhost:5701`, this can be updated in:
+The default address for the Hazelcast instance to view is `localhost:5701`, this can be updated by:
 
-* The `application.yml` file (`hazelcast.server.addresses` property)
-* By providing a `hazelcast.server.addresses` argument to the Spring Boot application when executing it
+* Updating the `application.yml` file (`hazelcast.server.addresses` property)
+* Providing a `hazelcast.server.addresses` argument to the Spring Boot application when executing it
 
 These properties support a comma separated list of addresses where a cluster of Hazelcast instances are running and you want to fall back to another node of one is not available.
 
