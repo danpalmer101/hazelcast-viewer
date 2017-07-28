@@ -1,0 +1,28 @@
+#======================
+# Logback configuration
+#======================
+logging:
+  pattern:
+    console: "%d %-5level [%thread] %logger : %msg%n"
+  level:
+    root: WARN
+    com.hazelcast: INFO
+    io.danpalmer101: DEBUG
+
+#========================
+# Hazelcast configuration
+#========================
+
+hazelcast:
+  server:
+    addresses: localhost:5701
+  client:
+    instance:
+      name: remote-viewer
+
+#==========
+# Actuators
+#==========
+
+endpoints:
+  sensitive: false
